@@ -1,1 +1,314 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Matthew Lilley - IT Consultant specializing in blockchain, decentralized protocols, and DApps">
+    <meta name="theme-color" content="#000000">
+    <title>Matthew Lilley - IT Consultant</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            background: #ffffff;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+
+        header {
+            margin-bottom: 80px;
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 56px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .title {
+            font-size: 18px;
+            color: #666;
+            font-weight: 400;
+        }
+
+        .profile-links {
+            display: flex;
+            gap: 24px;
+            font-size: 14px;
+        }
+
+        .profile-links a {
+            color: #1a1a1a;
+            text-decoration: none;
+            border-bottom: 1px solid #1a1a1a;
+            transition: opacity 0.2s;
+        }
+
+        .profile-links a:hover {
+            opacity: 0.6;
+        }
+
+        .tagline {
+            font-size: 20px;
+            color: #1a1a1a;
+            font-weight: 400;
+            line-height: 1.5;
+            margin-bottom: 40px;
+        }
+
+        .specialization {
+            display: inline-block;
+            background: #f5f5f5;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-size: 13px;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 60px;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .section h2 {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #999;
+            margin-bottom: 32px;
+            font-weight: 500;
+        }
+
+        .experience-item {
+            margin-bottom: 48px;
+        }
+
+        .experience-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 12px;
+        }
+
+        .company-logo {
+            width: 48px;
+            height: 48px;
+            border-radius: 4px;
+            background: #f5f5f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+
+        .company-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .experience-title {
+            flex: 1;
+        }
+
+        .role {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 4px;
+        }
+
+        .company {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        .duration {
+            font-size: 13px;
+            color: #999;
+        }
+
+        .badge {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 6px 12px;
+            background: #f5f5f5;
+            border-radius: 3px;
+            font-size: 12px;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+
+        .about-text {
+            font-size: 15px;
+            color: #1a1a1a;
+            line-height: 1.8;
+        }
+
+        .about-text p {
+            margin-bottom: 16px;
+        }
+
+        .contact-links {
+            margin-top: 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .contact-links a {
+            color: #1a1a1a;
+            text-decoration: none;
+            font-size: 14px;
+            border-bottom: 1px solid #1a1a1a;
+            display: inline-block;
+            transition: opacity 0.2s;
+        }
+
+        .contact-links a:hover {
+            opacity: 0.6;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 20px;
+            }
+
+            h1 {
+                font-size: 40px;
+            }
+
+            .header-top {
+                flex-direction: column;
+                gap: 32px;
+            }
+
+            .profile-links {
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .tagline {
+                font-size: 18px;
+            }
+
+            .content {
+                grid-template-columns: 1fr;
+                gap: 48px;
+            }
+
+            header {
+                margin-bottom: 48px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-top">
+                <div>
+                    <h1>Matthew Lilley</h1>
+                    <p class="title">IT Consultant</p>
+                </div>
+                <div class="profile-links">
+                    <a href="mailto:hello@matthewlilley.com">Email</a>
+                    <a href="https://x.com/matthewlilley" target="_blank">X</a>
+                    <a href="https://github.com/matthewlilley" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <p class="tagline">
+                Specialist in blockchain infrastructure, decentralized protocols, and distributed applications. Building at the intersection of cryptography and scalable systems.
+            </p>
+
+            <span class="specialization">Blockchain • DeFi • Web3</span>
+        </header>
+
+        <main class="content">
+            <!-- Experience Section -->
+            <section class="section">
+                <h2>Experience</h2>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="company-logo">
+                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-11-18%20120121-ormRbrlXfgmr767C2GYweTXkkOZO6E.png" alt="Sushi Labs" />
+                        </div>
+                        <div class="experience-title">
+                            <div class="role">Director</div>
+                            <div class="company">Sushi Labs</div>
+                            <div class="duration">Apr 2024 – Present</div>
+                            <span class="badge">Blockchain</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="role" style="margin-bottom: 4px;">Chief Technology Officer</div>
+                    <div class="company" style="margin-bottom: 8px;">SushiSwap</div>
+                    <div class="duration" style="margin-bottom: 12px;">Jan 2022 – Apr 2024</div>
+                    <span class="badge">Blockchain</span>
+                </div>
+
+                <div class="experience-item">
+                    <div class="role" style="margin-bottom: 4px;">Core Developer</div>
+                    <div class="company" style="margin-bottom: 8px;">SushiSwap</div>
+                    <div class="duration" style="margin-bottom: 12px;">Sep 2020 – Jan 2022</div>
+                    <span class="badge">Blockchain</span>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section class="section">
+                <h2>About</h2>
+
+                <div class="about-text">
+                    <p>
+                        With deep expertise in blockchain protocols and decentralized systems, I've contributed to building some of DeFi's most robust infrastructure. My focus is on designing and implementing scalable, secure, and efficient solutions for distributed networks.
+                    </p>
+
+                    <p>
+                        At Sushi Labs as Director and previously at SushiSwap as CTO and Core Developer, I led technical strategy, architectural decisions, and hands-on protocol development. My work spans smart contract optimization, layer-2 scaling solutions, and cross-chain interoperability.
+                    </p>
+
+                    <p>
+                        I'm passionate about advancing blockchain technology through rigorous engineering and thoughtful protocol design. I actively contribute to the Web3 ecosystem and collaborate with teams pushing the boundaries of what's possible with decentralized systems.
+                    </p>
+                </div>
+
+                <div class="contact-links">
+                    <a href="mailto:hello@matthewlilley.com">hello@matthewlilley.com</a>
+                    <a href="https://x.com/matthewlilley" target="_blank">x.com/matthewlilley</a>
+                    <a href="https://github.com/matthewlilley" target="_blank">github.com/matthewlilley</a>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
